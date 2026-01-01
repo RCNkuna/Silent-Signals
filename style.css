@@ -1,0 +1,84 @@
+:root {
+  --bg: #0f1f1a;
+  --bg-soft: #132822;
+  --text: #e6f1ec;
+  --accent: #9fd6c2;
+  --soft: rgba(255,255,255,0.08);
+
+  --transition-slow: 900ms ease;
+  --transition-fast: 400ms ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  letter-spacing: 0.2px; 
+  background: var(--bg);
+  color: var(--text);
+  transition: background var(--transition);
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity var(--transition-slow),
+              transform var(--transition-slow);
+}
+
+.screen.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.lead {
+  font-size: clamp(1.5rem, 4vw, 1.9rem);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+button {
+  background: none;
+  border: 1px solid var(--soft);
+  color: var(--text);
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+button:hover {
+  background: var(--soft);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.small {
+  opacity: 0.7;
+  margin-top: 1.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    transform: none !important;
+  }
+}

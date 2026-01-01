@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Silent Signals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="app" role="main">
+    <section class="screen active" id="intro" aria-live="polite">
+      <p class="lead">
+        Some signals don’t shout.<br>
+        They show up quietly.
+      </p>
+      <button id="startBtn">Continue quietly →</button>
+    </section>
+
+    <section class="screen" id="card">
+      <p id="signalText"></p>
+      <div class="choices">
+        <button data-value="2" aria-label="Often applies to me">Often</button>
+        <button data-value="1" aria-label="Sometimes applies to me">Sometimes</button>
+        <button data-value="0" aria-label="Does not apply to me">Not really</button>
+      </div>
+    </section>
+
+    <section class="screen" id="end">
+      <p id="closingText"></p>
+      <p class="small">
+        This page won’t remember.<br>
+        But you might.
+      </p>
+      <button onclick="location.reload()">Close</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

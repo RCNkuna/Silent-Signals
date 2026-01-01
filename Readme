@@ -1,0 +1,87 @@
+# Silent Signals
+
+A quiet, privacy-first web experience for recognizing subtle signs of burnout.
+
+Not therapy.  
+Not diagnosis.  
+No tracking. No storage. No advice.
+
+Just awareness.
+
+---
+
+## 🌫️ What This Is
+
+Silent Signals is a reflective interface that helps users notice quiet patterns often associated with burnout — without collecting data, storing responses, or labeling emotions.
+
+The experience exists only in the moment.  
+Once it’s closed, everything disappears.
+
+---
+
+## 🚫 What This Is Not
+
+- Not a medical or mental-health tool  
+- Not a productivity app  
+- Not a data-driven platform  
+- Not a substitute for professional help  
+
+Silent Signals avoids scoring, charts, and recommendations by design.
+
+---
+
+## 🧠 Why I Built This
+
+Many digital wellness tools overwhelm users with tracking, metrics, and advice.
+I wanted to explore how **interface design alone** — typography, pacing, motion, and restraint — can create space for self-reflection without pressure or judgment.
+
+This project is an experiment in ethical UX and emotional responsibility.
+
+---
+
+## 🧩 How It Works
+
+- Users move through a series of gentle reflection prompts
+- Responses are never stored or displayed as scores
+- The interface subtly adapts its tone through color and motion
+- The session ends without history, memory, or output
+
+The UI responds emotionally — not numerically.
+
+---
+
+## 🔐 Privacy by Design
+
+- No login
+- No database
+- No cookies
+- No localStorage
+- No analytics
+
+Everything happens client-side and disappears on refresh.
+
+---
+
+## ♿ Accessibility & Care
+
+- Keyboard-only navigation supported
+- Visible focus states
+- `prefers-reduced-motion` respected
+- Clear language without diagnostic terms
+
+---
+
+## 🛠️ Tech Stack
+
+- HTML (semantic & accessible)
+- CSS (custom properties, transitions, reduced motion)
+- Vanilla JavaScript (state & flow control)
+
+No frameworks — intentionally.
+
+---
+
+## 🕯️ Final Note
+
+This page won’t remember.  
+But the user might.
